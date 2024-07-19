@@ -1,12 +1,14 @@
-function myIndexOf(arr, target) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === target) {
-      return i;
-    } else {
-      return -1;
+function sumArray(array) {
+  let sum = 0;
+  let arr = array[i];
+
+  for (let i = 2; i < array; i++) {
+    if (arr) {
+      sum += i;
     }
   }
+  return sum;
 }
 
-console.log(myIndexOf(["a", "s", "d", "f"], "s"));
-console.log(myIndexOf(["1", "2", "-3", "5"], "4"));
+console.log(sumArray(["1", "2", "3", "5"]));
+console.log(sumArray(["0", "9", "7", "6"]));
