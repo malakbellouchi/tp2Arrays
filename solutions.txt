@@ -1,11 +1,6 @@
 -----------------------ex1---------------------------
 function wordWithinArray(array, word) {
-  //   let wrd = ;
-  if (array.indexOf(word)) {
-    return true;
-  } else {
-    return false;
-  }
+  return array.indexOf(word) !== -1;
 }
 
 console.log(
@@ -18,6 +13,7 @@ console.log(
 ); //->false
 console.log(wordWithinArray(["dog", "cat", "camel", "bird"], "panther")); //->false
 
+
 -----------------------ex2---------------------------
 function combineArray(array1, array2) {
   return array1.concat(array2);
@@ -25,11 +21,82 @@ function combineArray(array1, array2) {
 
 console.log(combineArray([1, 2, 3], [4, 5, 6]));
 -----------------------ex3---------------------------
-????????
+let threeIncreasing = function(numbers){
+
+  let increment = []
+
+  for (let i = 0; i < numbers.length; i++){
+    let inc = ;
+    if (inc){
+      return true
+    }
+  }
+  return false
+
+  return increment;
+
+}
+
+console.log(threeIncreasing([2, 11, 12, 13, 2, 41])); // true
+console.log(threeIncreasing([2, 7, 8, 91])); // true
+console.log(threeIncreasing([17, 2, 4, 5, 2, 1, 6])); // false
+console.log(threeIncreasing([l, 2, 4, 5, a 7, 81])); // false
+
 -----------------------ex4---------------------------
+function myIncludes(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) {
+      return true;
+    }
+  }
+  return false;
+}
+
+console.log(myIncludes(["a", "s", "d", "f"], "s"));
+console.log(myIncludes(["1", "2", "-3", "5"], "4"));
 
 -----------------------ex5---------------------------
+function myIndexOf(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+console.log(myIndexOf(["a", "s", "d", "f"], "s"));
+console.log(myIndexOf(["1", "2", "-3", "5"], "4"));
 
 -----------------------ex6---------------------------
+function sumArray(array) {
+  let sum = 0;
+  let arr = array[i];
+
+  for (let i = 0; i < array; i++) {
+    if (arr) {
+      sum += i;
+    }
+  }
+  return sum;
+}
+
+console.log(sumArray(["1", "2", "3", "5"]));
+console.log(sumArray(["0", "9", "7", "6"]));
 
 -----------------------ex7---------------------------
+function productWithReduce(array) {
+  let product = 0;
+  let arr = array[i];
+  
+
+  for (let i = 0; i < array; i++) {
+    if (arr) {
+      product += i;
+    }
+  }
+  return product;
+}
+
+console.log(productWithReduce(["1", "2", "3", "5"]));
+console.log(productWithReduce(["0", "9", "7", "6"]));
